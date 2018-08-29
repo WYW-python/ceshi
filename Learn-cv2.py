@@ -28,7 +28,7 @@ video_size = (int(video.get(cv2.CAP_PROP_FRAME_WIDTH)),int(video.get(cv2.CAP_PRO
 videoWriter = cv2.VideoWriter(r'E:\Python\test36.avi',-1,video_fps,video_size)
 while success:
     cv2.imshow('test22',frame)#显示视频
-    cv2.waitKey(int(video_fps))#暂定
+    cv2.waitKey(int(video_fps))#暂停
     
     videoWriter.write(frame)
     success,frame=video.read()#继续读取帧
